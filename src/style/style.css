@@ -1,0 +1,15 @@
+/*
+Theme Name: Pro-Ficiency
+Theme URI: https://www.pro-ficiency.com
+Author: Brandon Frye
+Author URI: https://brandonfrye.io
+Version: 0.0.1
+*/
+
+@import 'variables';
+@import 'fonts';
+@import 'inputs';
+@import 'globals';
+@import 'header';
+@import 'front-page';
+@import 'footer';

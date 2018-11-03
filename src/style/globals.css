@@ -1,0 +1,26 @@
+*, *:before,*:after {
+  box-sizing: border-box;
+	outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+h1, h2 {
+  color: var(--lightblue);
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+p, p span {
+  line-height: 1.4;
+}
+
