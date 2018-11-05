@@ -37,7 +37,6 @@
   }
 }
 
-
 .hero-animation {
   border-bottom: 4px solid var(--paleblue);
   bottom: 0;
@@ -160,34 +159,59 @@
 
 
 
+body.js-active-video {
+  overflow: hidden;
+}
+
+body.js-active-video #video-container {
+  display: flex;
+  z-index: 10;
+}
+
+
+
 #video-container {
   background-color: rgba(0,0,0,0.4);
   bottom: 0;
+  display: none;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   z-index: -1;
 
+  & > * {
+    margin: auto;
+  }
+
   & .video-wrapper {
+    /* display: flex; */
     height: 0;
-    margin: 3em;
-    padding-bottom: 56.25%;
+    max-width: 900px;
+    padding-bottom: 51%;
     position: relative;
-    max-width: 100%;
+    width: 90vw;
+
+    & > * {
+      margin: auto;
+    }
   }
 
   & video {
-    height: auto;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
     width: 100%;
   }
 }
 
 #close-video {
+  cursor: pointer;
   position: absolute;
-  top: -32px;
+  top: -36px;
   right: 0;
   height: 27px;
   width: 27px;
-  fill: var(--lightblue);
+  fill: white;
 }
