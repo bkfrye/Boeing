@@ -20,6 +20,8 @@
 
   <div class="explainer">
 
+    <?php get_template_part('template_parts/plane-animation'); ?>
+
     <div class="shape-divider">
       <?php get_template_part('img/circle-divider.svg'); ?>
     </div>

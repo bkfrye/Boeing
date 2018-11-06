@@ -134,7 +134,7 @@
 
 
 .explainer {
-  min-height: 400px;
+  padding-bottom: 80px;
   position: relative;
 
   & .shape-divider {
