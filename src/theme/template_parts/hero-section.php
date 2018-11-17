@@ -1,6 +1,6 @@
 <div class="hero-intro">
   <h1>We help <span>reduce protocol violations in clinical trials</span> with simulation-based training for investigators.</h1>
-  <div class="play-video">
+  <!-- <div class="play-video">
     <svg id="play-btn" viewBox="0 0 34.2 34" style="enable-background:new 0 0 34.2 34;" xml:space="preserve">
       <polygon id="play" style="fill:#F9632F;" points="12.2,24.1 24.6,17 12.2,10 "/>
       <g id="circle">
@@ -12,11 +12,11 @@
       </g>
     </svg>
     <p>Watch the video</p>
-  </div>
+  </div> -->
   <div class="hero-animation">
-    <div class="plane">
-      <?php get_template_part('img/hero-plane.svg'); ?>
-    </div>
+    <!-- <div class="plane">
+      <?php //get_template_part('img/hero-plane.svg'); ?>
+    </div> -->
     <div class="clouds">
       <?php get_template_part('img/clouds.svg'); ?>
     </div>
