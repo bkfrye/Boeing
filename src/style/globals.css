@@ -24,3 +24,19 @@ p, p span {
   line-height: 1.4;
 }
 
+
+
+/* components  */
+
+.btn {
+  margin: 66px 0;
+
+  & a {
+    background-color: var(--orange);
+    border-radius: 4px;
+    color: white;
+    padding: 9px 58px;
+    text-decoration: none;
+  }
+}
+

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main class="home-pg">
   <?php get_template_part('template_parts/hero-section'); ?>
 
   <section class="about">
@@ -18,19 +18,67 @@
     </div>
   </div>
 
-  <div class="explainer">
+  <div class="siv-dashboard">
+    <div class="siv-dashboard-wrapper">
+      <figure>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dashboard.png" alt="">
+      </figure>
+      <div class="siv-dashboard-content">
+        <h2>Our SIV* Dashboard</h2>
+        <p>Shows each site's <span>strengths</span> and <span>weaknesses</span></p>
 
-    <?php get_template_part('template_parts/plane-animation'); ?>
-
-    <div class="shape-divider">
-      <?php get_template_part('img/circle-divider.svg'); ?>
+        <div class="break-mark"></div>
+        <p>FPI can't happen until everyone is <span>trained</span> and <span>certified</span> in the protocol. We do it <span>faster</span> than anyone</p>
+      </div>
     </div>
   </div>
 
   <div class="testimonial">
     <section class="testimonial-content">
-      <p>“I found that the simulation was very intuitive and engaging. I appreciated being able to work at my own pace and felt that this model of training made it easy to follow. Personally, I would prefer this simulation as opposed to in-person meetings and training. Overall, it was a wonderful experience!”</p>
+      <div class="testimonial-quote">
+        <p>“I found that the simulation was very intuitive and engaging. I appreciated being able to work at my own pace and felt that this model of training made it easy to follow. Personally, I would prefer this simulation as opposed to in-person meetings and training. Overall, it was a wonderful experience!”</p>
+      </div>
+      <div class="testimonial-author">
+        <div class="profile-img">
+          <img src="" alt="">
+        </div>
+        <div class="profile-info">
+          <p class="name">Christine S.</p>
+          <p class="title">Study Coordinator</p>
+        </div>
+      </div>
     </section>
+  </div>
+
+  <div class="features">
+    <section>
+      <div>
+        <?php get_template_part('img/features.svg'); ?>
+      </div>
+      <div class="features-content">
+        <p>Pro-ficiency offers <span>enrolled subject training through ProPatient. This better prepares your subjects for the study and keep them engaged.</p>
+        <div class="btn">
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="investigator-stats">
+    <h3>Investigators <span>Love Us</span></h3>
+    <ul class="investigator-stats-info">
+      <li>
+        <div class="icon">
+          <?php get_template_part(''); ?>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="extra-video">
+    <div class="extra-video-placeholder"></div>
   </div>
 
 
