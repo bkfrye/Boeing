@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 34 22" style="enable-background:new 0 0 34 22;" xml:space="preserve">
+	 viewBox="0 0 34 20.6" style="enable-background:new 0 0 34 20.6;" xml:space="preserve">
 <g>
 	<g>
 		<path style="fill:#94BFE0;" d="M32.4,16.1c-0.7,0-1.3,0.6-1.3,1.3c0,0.6,0.4,1.1,1,1.3v2.1h-8.4v-1.4c0.8-0.2,1.3-0.8,1.3-1.6

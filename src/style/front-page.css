@@ -29,24 +29,6 @@
   }
 }
 
-#hero-video {
-  left: 0;
-  height: 100%;
-  max-width: 1280px;
-
-  opacity: 0;
-
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-
-  & video {
-    height: 100%;
-    width: 100%;
-  }
-}
-
 .play-video {
   cursor: pointer;
 
@@ -59,8 +41,7 @@
    }
 }
 
-.hero-animation {
-  border-bottom: 4px solid var(--paleblue);
+.hero-illustration {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -79,6 +60,7 @@
   }
 
   & .city-scape {
+    border: 1px solid blue;
     display: flex;
     justify-content: space-between;
     bottom: -6px;
@@ -90,8 +72,19 @@
     right: 0;
 
     & svg {
+      display: block;
       height: 8vw;
+
     }
+  }
+
+  & .city-scape:after {
+    /* bottom: -3px;
+    content: '';
+    background-color: var(--paleblue);
+    height: 5px;
+    position: absolute;
+    width: 100%; */
   }
 }
 
@@ -169,6 +162,38 @@
     height: auto;
     max-width: 250px;
     width: 100%;
+  }
+}
+
+.investigator-stats {
+
+}
+
+.extra-video {
+  display: flex;
+  justify-content: center;
+  padding: 54px 0;
+
+  & .extra-video-placeholder {
+    border: 2px solid var(--lightblue);
+    border-radius: 8px;
+    display: inline-block;
+    padding: 9px;
+    position: relative;
+    text-align: center;
+  }
+
+  & #play-btn {
+    cursor: pointer;
+    fill: white;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
   }
 }
 

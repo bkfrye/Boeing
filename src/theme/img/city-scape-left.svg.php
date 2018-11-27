@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 22" style="enable-background:new 0 0 100 22;" xml:space="preserve">
+	 viewBox="0 0 100 20.6" style="enable-background:new 0 0 100 20.6;" xml:space="preserve">
 <rect x="4.9" y="7.5" style="fill:#94BFE0;" width="0.8" height="0.8"/>
 <rect x="6.4" y="7.5" style="fill:#94BFE0;" width="0.8" height="0.8"/>
 <rect x="8" y="7.5" style="fill:#94BFE0;" width="0.8" height="0.8"/>

@@ -1,7 +1,4 @@
 <div class="hero-intro">
-  <div id="hero-video">
-    <?php get_template_part('template_parts/plane-animation'); ?>
-  </div>
   <h1>We help <span>reduce protocol violations in clinical trials</span> with simulation-based training for investigators.</h1>
   <div class="play-video">
     <svg id="play-btn" viewBox="0 0 34.2 34">
@@ -16,7 +13,7 @@
     </svg>
     <p>Watch the video</p>
   </div>
-  <div class="hero-animation">
+  <div class="hero-illustration">
     <div class="clouds">
       <?php get_template_part('img/clouds.svg'); ?>
     </div>

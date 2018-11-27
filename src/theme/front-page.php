@@ -78,7 +78,19 @@
 
 
   <div class="extra-video">
-    <div class="extra-video-placeholder"></div>
+    <div class="extra-video-placeholder">
+      <svg id="play-btn" viewBox="0 0 34.2 34">
+        <polygon id="play" style="fill:#ffffff;" points="12.2,24.1 24.6,17 12.2,10 "/>
+        <g id="circle">
+        	<g>
+        		<path style="fill:#ffffff;" d="M33.2,17c0,8.8-7.2,16-16,16s-16-7.2-16-16c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8
+        			c0,8,6.5,14.5,14.5,14.5S31.6,25,31.6,17c0-8-6.5-14.5-14.5-14.5c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8
+        			C26,1,33.2,8.2,33.2,17z"/>
+        	</g>
+        </g>
+      </svg>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/extra-video-poster.png" alt="">
+    </div>
   </div>
 
 
