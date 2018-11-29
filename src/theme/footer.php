@@ -3,7 +3,7 @@
     <div class="contact-form">
       <h3>Drop us a line anytime and we will get back to you as soon as possible</h3>
       <div class="form">
-        <?php echo do_shortcode('[wpforms id="25"]'); ?>
+        <?php echo do_shortcode('[wpforms id="8"]'); ?>
       </div>
     </div>
 
