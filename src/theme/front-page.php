@@ -20,14 +20,14 @@
 
   <div class="siv-dashboard">
     <div class="siv-dashboard-wrapper">
-      <figure>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dashboard.png" alt="">
-      </figure>
+      <div class="siv-dashboard-img">
+        <?php get_template_part('img/siv-dashboard.svg');?>
+      </div>
       <div class="siv-dashboard-content">
         <h2>Our SIV* Dashboard</h2>
-        <p>Shows each site's <span>strengths</span> and <span>weaknesses</span></p>
+        <p>Shows each site's <span>strengths</span> and <span>weaknesses</span>. It's the perfect tool for CRAs and study monitors.</p>
 
-        <div class="break-mark"></div>
+        <div class="horiz-rule"></div>
         <p>FPI can't happen until everyone is <span>trained</span> and <span>certified</span> in the protocol. We do it <span>faster</span> than anyone</p>
       </div>
     </div>
@@ -40,7 +40,7 @@
       </div>
       <div class="testimonial-author">
         <div class="profile-img">
-          <img src="" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/testimonial.png" alt="Profile Image">
         </div>
         <div class="profile-info">
           <p class="name">Christine S.</p>
@@ -56,7 +56,7 @@
         <?php get_template_part('img/features.svg'); ?>
       </div>
       <div class="features-content">
-        <p>Pro-ficiency offers <span>enrolled subject training through ProPatient. This better prepares your subjects for the study and keep them engaged.</p>
+        <p>Pro-ficiency offers <span>enrolled subject training through ProPatient.</span> This better prepares your subjects for the study and keep them engaged.</p>
         <div class="btn">
           <a href="#">Read More</a>
         </div>
@@ -70,8 +70,21 @@
     <ul class="investigator-stats-info">
       <li>
         <div class="icon">
-          <?php get_template_part(''); ?>
+          <?php get_template_part('img/icon-1.svg'); ?>
         </div>
+        <p>of PI liked or loved <br>the Pro-ficiency approach</p>
+      </li>
+      <li>
+        <div class="icon">
+          <?php get_template_part('img/icon-2.svg'); ?>
+        </div>
+        <p>said Pro-ficiency took <br>less of their time</p>
+      </li>
+      <li>
+        <div class="icon">
+          <?php get_template_part('img/icon-3.svg'); ?>
+        </div>
+        <p>prefer IM's to Pro-ficiency</p>
       </li>
     </ul>
   </div>

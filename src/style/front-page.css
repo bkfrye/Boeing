@@ -1,4 +1,5 @@
 .home-pg {
+  overflow-x: hidden;
   & h2 {
     color: var(--lightblue);
   }
@@ -60,7 +61,7 @@
   }
 
   & .city-scape {
-    border: 1px solid blue;
+    border-bottom: 3px solid var(--paleblue);
     display: flex;
     justify-content: space-between;
     bottom: -6px;
@@ -78,14 +79,24 @@
     }
   }
 
+  & .city-scape:before,
   & .city-scape:after {
-    /* bottom: -3px;
+    bottom: -3px;
     content: '';
     background-color: var(--paleblue);
-    height: 5px;
+    height: 3px;
     position: absolute;
-    width: 100%; */
+    width: 100%;
   }
+
+  & .city-scape:before {
+    left: -100%;
+  }
+
+  & .city-scape:after {
+    right: -100%;
+  }
+
 }
 
 .about {
@@ -144,18 +155,123 @@
 }
 
 
+.siv-dashboard-wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 54px 0;
+
+  & .siv-dashboard-img,
+  & .siv-dashboard-content {
+    flex: 1;
+  }
+
+  & .siv-dashboard-img {
+    height: auto;
+    width: 100%;
+
+    & svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & .siv-dashboard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3em;
+
+    & p span {
+      color: var(--orange);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  & .horiz-rule {
+    background-color: var(--lightblue);
+    height: 4px;
+    width: 50px;
+  }
+}
+
+
 .testimonial {
   background-color: var(--lightblue);
   color: white;
-  min-height: 300px;
   padding: 2em 0;
 }
 
+.testimonial-content {
+  align-items: center;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 2em 1em;
+
+  @media (width > 840px) {
+    display: flex;
+    padding: 3em;
+  }
+}
+
+.testimonial-quote {
+  @media (width > 840px) {
+    padding-right: 3em;
+    text-align: right;
+    width: 70%;
+  }
+}
+
+.testimonial-author {
+  align-items: center;
+  display: flex;
+
+  & .profile-img {
+    border-radius: 58px;
+    height: 106px;
+    overflow: hidden;
+    width: 106px;
+  }
+
+  & .profile-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    margin-left: -1em;
+    padding: 1em;
+  }
+
+  & p {
+    font-size: 15px;
+    margin: 0;
+    padding-left: 1em;
+  }
+
+  & .name {
+    font-weight: bolder;
+  }
+
+  & .title {
+    font-size: 13px;
+  }
+}
 
 .features {
   margin: 0 auto;
   max-width: 600px;
   padding: 2em 0;
+
+  & .features-content {
+    & p {
+      color: var(--lightblue);
+      font-size: 24px;
+    }
+
+    & p span {
+      color: var(--orange);
+      font-weight: bolder;
+    }
+  }
 
   & .feature-icon {
     display: inline-block;
@@ -165,8 +281,46 @@
   }
 }
 
-.investigator-stats {
+.features-content {
+  text-align: center;
+}
 
+.investigator-stats {
+  background-color: #f9f9f9;
+  padding: 1em 0;
+
+  & h3 {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}
+
+.investigator-stats-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: var(--max-width);
+
+  & li {
+    list-style-type: none;
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+
+    & svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    & p {
+      color: var(--orange);
+      font-size: 12px;
+    }
+  }
+
+  & .icon {
+    padding-left: 14px;
+  }
 }
 
 .extra-video {
@@ -175,10 +329,10 @@
   padding: 54px 0;
 
   & .extra-video-placeholder {
-    border: 2px solid var(--lightblue);
+    border: 1px solid var(--lightblue);
     border-radius: 8px;
     display: inline-block;
-    padding: 9px;
+    padding: 6px;
     position: relative;
     text-align: center;
   }
@@ -214,44 +368,49 @@ body.js-active-video #video-container {
 
 #video-container {
   background-color: rgba(0,0,0,0.4);
-  bottom: 0;
   display: none;
   left: 0;
+  height: 100%;
+  overflow: hidden;
   position: fixed;
-  right: 0;
   top: 0;
+  width: 100%;
   z-index: -1;
 
-  & > * {
-    margin: auto;
-  }
-
   & .video-wrapper {
-    /* display: flex; */
-    height: 0;
-    max-width: 900px;
-    padding-bottom: 51%;
-    position: relative;
-    width: 90vw;
-
-    & > * {
-      margin: auto;
-    }
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-height: 720px;
+  	max-width: 100vh;
+    width: 100%;
   }
 
+  & .video-content {
+    margin: 0;
+    position: relative;
+  }
   & video {
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
+  	height: auto;
+    position: relative;
     width: 100%;
+  }
+
+  & #close-video {
+    color: white;
+    font-size: 28px;
+    height: 36px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -36px;
+    width: 36px;
   }
 }
 
 #close-video {
   cursor: pointer;
   position: absolute;
-  top: -36px;
   right: 0;
   height: 27px;
   width: 27px;

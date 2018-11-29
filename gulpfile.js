@@ -64,8 +64,8 @@ Header & Footer JavaScript Bundles
 const headerJS = [
 	'node_modules/jquery/dist/jquery.js',
   // 'node_modules/svg.js/dist/svg.min.js',
-  'node_modules/vivus/dist/vivus.min.js',
-	// 'node_modules/gsap/',
+  // 'node_modules/vivus/dist/vivus.min.js',
+	'node_modules/gsap/',
 ];
 const footerJS = ['src/js/**'];
 
