@@ -92,7 +92,7 @@
 
   <div class="extra-video">
     <div class="extra-video-placeholder">
-      <svg id="play-btn" viewBox="0 0 34.2 34">
+      <svg id="play-btn" class="play-poster" viewBox="0 0 34.2 34">
         <polygon id="play" style="fill:#ffffff;" points="12.2,24.1 24.6,17 12.2,10 "/>
         <g id="circle">
         	<g>

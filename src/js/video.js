@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
+  // Load main video on click from homepage
   const loadVid = () => {
   	const url = 'https://pro-ficiency.akamaized.net/website/web-intro-747-v4-web.mp4';
 
@@ -42,6 +43,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
+  // footer video on homepage
+  const playVideo = document.querySelector('.play-poster');
+  let vidURL = 'http://pro-ficiency.com/wp-content/themes/uncode-child/video/pro_home-videov3.mp4';
+
+  const videoContent = `<video id='intro-video' width="100%" height="auto" autoplay controls src='${vidURL}'></video>`;
+
+  const playPosterVid = () => {
+    document.querySelector('.extra-video-placeholder').innerHTML = videoContent;
+  }
+
+  playVideo.onclick = () => {
+    playPosterVid()
+  }
 
 
 
